@@ -1,0 +1,14 @@
+--- 
+jobs: 
+  build: 
+    docker: 
+      - 
+        image: "circle/node:7"
+    steps: 
+      - checkout
+      - 
+        run: "npm install"
+      - 
+        run: "npm test"
+    working_directory: ~/tmp
+version: 2
